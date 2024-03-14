@@ -516,6 +516,9 @@
   background-position: top;
   max-width: 100%;
 }
+.qr-codes-personalizados.seleccionado {
+  background-color: blue; /* Cambia el fondo a azul cuando se selecciona */
+}
 .sibling-twice-removed-nodes {
   align-self: stretch;
   flex-direction: row;
