@@ -1,28 +1,57 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var textoCambiarFondo = document.getElementById('boton-1');
-    var textoCambiarFondo2 = document.getElementById('boton-2');
-    var textoCambiarFondo3 = document.getElementById('boton-3');
-    var textoCambiarFondo4 = document.getElementById('boton-4');
-    var claseConFondo = document.querySelector('.uncle-thrice-removed-nodes');
+document.addEventListener("DOMContentLoaded", function () {
+  let botones = [
+    document.getElementById("boton-1"),
+    document.getElementById("boton-2"),
+    document.getElementById("boton-3"),
+    document.getElementById("boton-4"),
+  ];
+  let imagenes = [
+    'url("./public/01-qrcodes.png")',
+    'url("./public/02-profilemenu.png")',
+    'url("./public/03-panaderia.png")',
+    'url("./public/04-calendary.png")',
+  ];
+  let indiceActual = 0;
+  let claseConFondo = document.querySelector(".contenedor-botones2");
 
-    textoCambiarFondo.addEventListener('click', function() {
-        // Cambiar el fondo de la clase
-        claseConFondo.style.backgroundImage = 'url("./public/qrcodespersonalizadoslandingpage.png")';
-    });
+  // Inicializa con el primer botón activo y fondo trasparente
+  cambiarFondo(indiceActual, true); // Inicia sin retraso en la transición
 
-    textoCambiarFondo2.addEventListener('click', function() {
-        // Cambiar el fondo de la clase
-        claseConFondo.style.backgroundImage = 'url("./public/ProfileMenuReservaciones.png")';
-    });
+  // Cambiar fondo cada 5 segundos
+  setInterval(() => {
+    indiceActual = (indiceActual + 1) % botones.length;
+    cambiarFondo(indiceActual);
+  }, 5500);
 
-    textoCambiarFondo3.addEventListener('click', function() {
-        // Cambiar el fondo de la clase
-        claseConFondo.style.backgroundImage = 'url("./public/landingpanaderia-1@2x.png")';
+  // Agregar eventos de click a los botones
+  botones.forEach((boton, indice) => {
+    boton.addEventListener("click", function () {
+      indiceActual = indice; // Actualiza el índice actual al índice del botón presionado
+      cambiarFondo(indice);
     });
+  });
 
-    textoCambiarFondo4.addEventListener('click', function() {
-        // Cambiar el fondo de la clase
-        claseConFondo.style.backgroundImage = 'url("./public/calendario.png")';
-    });
+  function cambiarFondo(indice, inicial = false) {
+    // Solo reduce la opacidad si no es la carga inicial
+    if (!inicial) {
+      claseConFondo.style.opacity = "0";
+    }
+
+    // Cambia la imagen después de un breve retraso
+    setTimeout(
+      () => {
+        botones.forEach((boton) => boton.classList.remove("boton-activo"));
+        botones[indice].classList.add("boton-activo");
+        claseConFondo.style.backgroundImage = imagenes[indice];
+
+        // Añade un ligero retraso antes de restaurar la opacidad para permitir que la imagen cambie
+        setTimeout(() => {
+          claseConFondo.style.opacity = "1";
+        }, 100); // Ajusta este tiempo si es necesario
+      },
+      inicial ? 0 : 850
+    ); // Espera más tiempo si no es la carga inicial para una transición más suave
+  }
 
 });
+//Page SERVICES

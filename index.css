@@ -1,3 +1,512 @@
+:root {
+  /* fonts */
+  --font-open-sans: "Open Sans";
+  --font-bebas-neue: "Bebas Neue";
+  --font-inter: Inter;
+  --font-century-gothic: "Century Gothic";
+  --font-century-gothic-pro: "Century Gothic Pro";
+  --font-nunito-sans: "Nunito Sans";
+  --font-gilroy: Gilroy;
+}
+
+/* Estilos generales */
+body {
+  font-family: Century Gothic Pro, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.contenedor {
+  display: flex; /* Utilizamos flexbox para dividir en columnas */
+  justify-content: space-between; /* Espacio entre las columnas */
+  padding: 20px; /* Espacio alrededor del contenido */
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+
+.columna {
+  width: 50%; /* Las columnas ocupan el mismo espacio */
+  background-color: #fff; /* Fondo blanco */
+  padding: 10px; /* Espacio interno del contenido */
+  margin: 0 0px; /* Margen entre columnas */
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.columna p {
+  text-align: center;
+  font-size: medium;
+  font-weight: 100;
+}
+
+.cabecera {
+  display: flex; /* Utilizamos flexbox para dividir en columnas */
+  justify-content: space-between; /* Espacio entre las columnas */
+  align-items: center;
+  padding: 0px; /* Espacio alrededor del contenido */
+  position: fixed;
+  width: 100%; 
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+}
+.logo1 {
+  padding-top:20px !important;
+  flex:1;
+  width: 15%; /* Las columnas ocupan el mismo espacio */  
+  align-items: end;
+}
+.logoS {
+  width: 150px; /* Establece el ancho de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border: px solid #007bff; /* Añade un borde azul */
+  border-radius: 10px; /* Añade bordes redondeados */
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Añade una sombra */
+  filter: grayscale(0%); /* Aplica un efecto de escala de grises al 50% */
+  opacity: 1; /* Reduce la opacidad */
+  position: absolute;
+  margin-top: 5px;
+  padding-top: 30px !important;
+  padding-left: 30px;
+  top: 2px;
+  left: 10px;
+  bottom: 6px;
+}
+.btn{
+  align-items: center;
+  align-self: center;
+  padding-right: 8px;
+  width: 17px;
+}
+.LOG {
+  height: 88px;
+  width: 8%; /* Las columnas ocupan el mismo espacio */
+  background-color: rgba(76, 76, 76, 75); /* Fondo blanco */
+  /*padding-right: 15px; Espacio interno del contenido
+  padding-left: 15px; */
+  text-align: center;
+  border: none;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 0px 40px;
+}
+
+.LOG a{
+  color: #fff;
+  font-size: large;
+  /* font-weight: bold; */
+  font-family: "Bebas Neue";
+  padding-top: 28px;
+}
+
+nav {
+  height: 88px;
+  width: 38%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  transform: translateX(-50%); /* Desplaza el elemento hacia atrás en la mitad de su ancho */
+  left: calc(50%);
+  border-radius: 0 0 40px 40px;
+  background: linear-gradient(269.92deg, #e83e8c, #6f42c1);
+  max-width: 100%;
+  z-index: 1;
+ }
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  padding: 10px;
+  bottom: 0px;
+  border-radius: 0px 0px 15px 15px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  display: flex;
+  justify-content: center;
+  margin-right:0px !important;
+  justify-content: space-evenly;
+  
+}
+
+nav ul li {
+  display: inline;
+  margin: 5px 10px;
+  font-size: 14px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 550;
+  padding: 1px;
+  padding-bottom: 20px;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  
+}
+nav ul li a.activo {
+  text-decoration: underline; /* Subraya el enlace activo */
+  text-decoration-color: #E83E8C;
+  text-decoration-thickness: 1px;
+}
+.title {
+  text-align: left !important;
+  align-items: start;
+  font-size: 70px !important;
+  font-weight: 600;
+}
+section {
+  text-align: center;
+  padding: 50px 0;
+}
+.contenedor-botones {
+  text-align: center; /* Centra los botones */
+}
+.boton {
+  display: inline-block; /* Hace que los botones estén en línea */
+  padding: 10px 30px 10px 30px; /* Espacio interno para el botón */
+  margin: 0 5px; /* Margen entre los botones */
+  background-image: linear-gradient( -45deg,#E83E8C, #6F42C1); /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 10px; /* Borde redondeado del botón */
+  text-decoration: none; /* Elimina subrayado */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-weight: bolder;
+  font-size: large;
+}
+.boton1 {
+  display: inline-block; /* Hace que los botones estén en línea */
+  padding: 10px 20px; /* Espacio interno para el botón */
+  margin: 0 5px; /* Margen entre los botones */
+  background-image: linear-gradient( -45deg,#E83E8C, #6F42C1); /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 10px; /* Borde redondeado del botón */
+  text-decoration: none; /* Elimina subrayado */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-weight: bolder;
+  font-size: large;
+}
+
+
+.contenedor-botones2 {
+  text-align: center; /* Centra los botones */
+  background-image: url('img/qrcodespersonalizadoslandingpage.png');
+  background-size: contain;
+  background-position: right; /* Centra la imagen en la sección */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 0px; 
+  z-index: 1;
+  position: fixed;
+  overflow: hidden; /* Esconde las partes del pseudo-elemento que se desborden */
+  transition: opacity 1s ease-in-out; /* Suaviza el cambio de opacidad */
+  background-attachment: fixed;
+  top: -1%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contenedor-botones2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: right;
+  opacity: 0; /* Inicia invisible */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave para opacidad y deslizamiento */
+}
+
+.boton2 {
+  text-align: start;
+  font-size: medium;
+  font-weight: 500;
+  width: 320px;
+  /* width: 238px; */
+  display: block; /* Muestra los botones como bloques */
+  padding: 15px 20px; /* Espacio interno para el botón */
+  margin: 10px auto; /* Margen para centrar verticalmente */
+  background-color: #ffffff; /* Color de fondo del botón */
+  color: #E83E8C; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Borde redondeado del botón */
+  text-decoration: none; /* Elimina subrayado */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  z-index: 100;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Agrega sombra al botón */
+  transition: transform 0.5s ease-in-out; /* Suaviza el movimiento del botón */
+}
+
+.botones{
+  display: flex;
+  position: absolute; /* Posicionamiento absoluto respecto a su contenedor relativo */
+  flex-direction: column;
+  align-items: flex-start;
+  top: 50%; /* Alineación vertical */
+  left: 45%; /* Alineación horizontal */
+  transform: translateY(-50%); /* Ajuste fino para centrado exacto */
+  z-index: 1000;
+  gap: 10px; /* Espaciado entre botones */
+}
+.boton-activo {
+  transform: translateX(30px); /* Mueve el botón activo 30px a la derecha */
+}
+.cont-botones{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los botones a la izquierda */
+  gap: 10px; /* Ajusta el espacio entre botones */
+  transition: background-image 1s ease-in-out; /* Suaviza el cambio de fondo */
+  }
+
+/* Media Query para pantallas de hasta 1200px */
+@media (max-width: 1200px) {
+  .logoS{
+    width: 90px;
+    top: 2px;
+    left: 5px;
+  }
+  nav {
+      width: 45%; /* Aumenta el ancho en pantallas más pequeñas */
+      height: 70px; /* Ajusta la altura si es necesario */
+      background: linear-gradient(90deg, #e83e8c, #6f42c1); /* Cambia el gradiente para variar el diseño */
+      border-radius: 0 0 30px 30px; /* Ajusta el borde redondeado */
+  }
+
+nav ul li {
+  display: inline;
+  margin: 5px 10px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 550;
+  padding: 1px;
+  padding-bottom: 20px;
+  font-family: "Bebas Neue";
+  font-size: 15px;
+}
+.LOG {
+  width:10%;
+  height: 55px !important;
+}
+.LOG a{
+  color: #fff;
+  font-size: 15px;
+  /* font-weight: bold; */
+  font-family: "Bebas Neue";
+  padding-top: 15px;
+}
+.title {
+      text-align: left !important;
+      align-items: start;
+      font-size: 39px !important;
+      font-weight: 600;
+  }
+.subtitle {
+  font-size: 13px !important;
+}  
+.btn{
+  align-items: center;
+  align-self: center;
+  padding-right: 8px;
+  width: 10px;
+}
+  .boton {
+    display: inline-block; /* Hace que los botones estén en línea */
+    padding: 10px 15px 10px 15px; /* Espacio interno para el botón */
+    margin: 0 5px; /* Margen entre los botones */
+    background-image: linear-gradient( -45deg,#E83E8C, #6F42C1); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 10px; /* Borde redondeado del botón */
+    text-decoration: none; /* Elimina subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-weight: bolder;
+    font-size: 10px;
+  }
+  .boton1 {
+    display: inline-block; /* Hace que los botones estén en línea */
+    padding: 10px 20px; /* Espacio interno para el botón */
+    margin: 0 5px; /* Margen entre los botones */
+    background-image: linear-gradient( -45deg,#E83E8C, #6F42C1); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 10px; /* Borde redondeado del botón */
+    text-decoration: none; /* Elimina subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-weight: bolder;
+    font-size: 10px;
+  }
+.boton2 {
+    text-align: start;
+    font-size: 11px;
+    font-weight: 500;
+    width: 225px;
+    display: block; /* Muestra los botones como bloques */
+    padding: 15px 20px; /* Espacio interno para el botón */
+    margin: 10px auto; /* Margen para centrar verticalmente */
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #E83E8C; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    text-decoration: none; /* Elimina subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    z-index: 100;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Agrega sombra al botón */
+    transition: transform 0.5s ease-in-out; /* Suaviza el movimiento del botón */
+  }
+
+}
+/* SERVICES */
+.services{
+  z-index: 2000;
+}
+
+/* check box*/
+
+.switch-button {
+  align-self: stretch;
+  border-radius: var(--br-sm);
+  background-color: var(--white);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--gray-300);
+  flex-direction: row;
+  padding: var(--padding-8xs);
+  gap: var(--gap-2xs);
+  z-index: 1;
+}
+.logic-gate-parent, .rectangle-parent {
+  border-radius: var(--br-sm);
+  padding: var(--padding-8xs);
+  cursor: pointer;
+  position: relative;
+}
+
+.logic-gate-parent.active .monthly, .rectangle-parent.active .monthly1 {
+  color: white; /* Color del texto activo */
+}
+
+.logic-gate-parent.active .logic-gate, .rectangle-parent.active .frame-child {
+  background: linear-gradient(269.92deg, #e83e8c, #6f42c1); /* Fondo activo */
+}
+
+#restaurantesButton {
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Letras oscuras */
+}
+.logic-gate {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  /* background: linear-gradient(269.92deg, #e83e8c, #6f42c1); */
+}
+.monthly {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 27px;
+  color: #4b5563;
+  text-align: center;
+  z-index: 1;
+}
+.logic-gate-parent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs) var(--padding-8xs) var(--padding-2xs)
+    var(--padding-9xs);
+  background-color: transparent;
+  flex: 1;
+  box-shadow: 3px 2px 8px rgba(232, 62, 140, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.frame-child {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  filter: drop-shadow(3px 2px 8px rgba(0, 0, 0, 0.1));
+}
+.monthly1 {
+  flex: 1;
+  position: relative;
+  line-height: 27px;
+  z-index: 1;
+}
+.rectangle-parent {
+  flex: 0.419;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-17xl) var(--padding-2xs) 34px;
+  position: relative;
+}
+
+/*End Services*/
+
+/* How-work-section */
+.how-work-section{
+  z-index: 3000;
+}
+
+
+/* Error-handler */
+.error-handler{
+  z-index: 4000;
+}
+
+.landing-page-26{
+  z-index: 4500;
+} 
+.set-node{
+  z-index: 5000;
+}
+
+.contact-us-section{
+  z-index: 6000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Aqui IA*/
 .logo-icon {
   width: 150px;
   /* height: 39.5px; */
@@ -581,66 +1090,6 @@
   justify-content: flex-start;
   gap: var(--gap-5xs);
   max-width: 100%;
-}
-.logic-gate {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--br-3xs);
-  background: linear-gradient(269.92deg, #e83e8c, #6f42c1);
-}
-.monthly {
-  flex: 1;
-  position: relative;
-  font-size: var(--font-size-base);
-  line-height: 27px;
-  font-family: var(--font-inter);
-  color: var(--white);
-  text-align: center;
-  z-index: 1;
-}
-.logic-gate-parent {
-  cursor: pointer;
-  border: 0;
-  padding: var(--padding-3xs) var(--padding-8xs) var(--padding-2xs)
-    var(--padding-9xs);
-  background-color: transparent;
-  flex: 1;
-  box-shadow: 3px 2px 8px rgba(232, 62, 140, 0.25);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-}
-.frame-child {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  margin: 0 !important;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: var(--br-3xs);
-  filter: drop-shadow(3px 2px 8px rgba(0, 0, 0, 0.1));
-}
-.monthly1 {
-  flex: 1;
-  position: relative;
-  line-height: 27px;
-  z-index: 1;
-}
-.rectangle-parent {
-  flex: 0.419;
-  flex-direction: row;
-  padding: var(--padding-3xs) var(--padding-17xl) var(--padding-2xs) 34px;
-  position: relative;
 }
 .aunt-six-times-removed-nodes,
 .rectangle-parent,

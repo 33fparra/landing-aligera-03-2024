@@ -48,52 +48,156 @@
     </style>
   </head>
   <body>
+
+
+  <div class="cabecera">
+      <div class="logo1">
+          <img src="img/Aligera logo.png" alt="logo" class="logoS">
+      </div>
+      <nav>
+          <ul>
+              <li><a href="#" class="activo">INICIO</a></li>
+              <li><a href="#">SERVICIOS</a></li>
+              <li><a href="#">PRECIOS</a></li>
+              <li><a href="#">CATÁLOGO</a></li>
+              <li><a href="#">CONTÁCTANOS</a></li>
+          </ul>
+      </nav>
+      <div class="LOG">
+          <a href="#">LOG IN/SIGN UP</a>
+      </div>  
+  </div>
+
+  <div class="contenedor">
+      <div class="columna">
+          <!-- Contenido de la primera columna -->
+          <p class="title">La aplicación web <br/>que te conecta a los <br/>mejores negocios <br/>cerca de ti.</p>
+          <p class="subtitle">¡Explora nuestro catálogo y escoge tu próximo destino!</p>
+          <div class="contenedor-botones">
+              <button class="boton">Ver Catálogo</button>
+              <button class="boton1">¡Registra Tu Negocio Hoy! +</button>
+          </div>
+      </div>
+      <div class="columna">
+      <div class="fondoR"></div>
+      <div class="contenedor-botones2"></div>
+      </div>
+      <div class="contenedor-botones-centrado">
+      <div class="botones">
+      <div class="cont-botones">
+        <button class="boton2" id="boton-1" ><img src="public/A.png" class="btn"/>QR CODES PERSONALIZADOS</button>
+        <button class="boton2" id="boton-2"><img src="public/A.png" class="btn"/>PERFIL DEL NEGOCIO</button>
+        <button class="boton2" id="boton-3"><img src="public/A.png" class="btn"/>MENÚ DIGITAL</button>
+        <button class="boton2" id="boton-4"><img src="public/A.png" class="btn"/>RESERVACIONES</button>
+      </div>
+    </div></div>  
+  </div>
+<!-- end page 1 -->
     <div class="landing-page-26">
-      <!-- page 1 -->
-      <section class="branch-node">
-        <div class="leaf-node">
-          <div class="parent-node">
-            <img class="logo-icon" alt="" src="./public/aligera_logo_gradient.png" width="150" />
 
-            <div class="child-nodes">
-              <div class="connected-nodes">
-                <h1 class="la-aplicacin-web">
-                  La aplicación web que te conecta a los mejores negocios cerca
-                  de ti.
-                </h1>
-                <div class="ancestor-node">
-                  <div class="descendant-nodes">
-                    <div class="cousin-nodes">
-                      <div class="explora-nuestro-catlogo">
-                        ¡Explora nuestro catálogo y escoge tu próximo destino!
-                      </div>
-                    </div>
-                    <div class="aunt-nodes">
-                      <div class="botton-1">
-                        <img
-                          class="mask-group-icon"
-                          loading="lazy"
-                          alt=""
-                          src="./public/mask-group.svg"
-                        />
+      <!-- 2 start page services -->
+        <section class="aunt-five-times-removed-nodes">
+          <div class="services">
+            <div class="ancestor-six-times-removed-nod">
+              <div class="descendant-six-times-removed-n">
+                <h1 class="servicios1">Servicios</h1>
+                <div class="conoce-la-variedad">
+                  Conoce la variedad de servicios que ofrecemos:
+                </div>
+              </div>
+      
+              <div class="aunt-six-times-removed-nodes">
+                <div class="switch-button">
+                  <button class="logic-gate-parent active" id="restaurantesButton" onclick="toggleSwitch(this)">
+                    <div class="logic-gate"></div>
+                    <b class="monthly">Restaurantes</b>
+                  </button>
+                  <div class="rectangle-parent" id="otrosButton" onclick="toggleSwitch(this)">
+                    <div class="frame-child"></div>
+                    <b class="monthly1">Otros</b>
+                  </div>
+                </div>
+              </div>
+  <script>  // Función para alternar los botones SERVICES
+    function toggleSwitch(clickedButton) {
+       console.log("que esta pasando");
+       //variables para SERVICIOS
+       let restaurantesButton = document.getElementById("restaurantesButton");
+       let otrosButton = document.getElementById("otrosButton");
+       let qrCodesText = document.querySelector(".ofrecemos-qr-codes");
+       // Cambiar el estado activo de los botones
+       restaurantesButton.classList.toggle("active");
+       otrosButton.classList.toggle("active");
+       // Cambiar el fondo activo según el botón activo
+       if (restaurantesButton.classList.contains("active")) {
+         otrosButton.style.background = "transparent"; // Otros inactivo
+         restaurantesButton.style.background =
+           "linear-gradient(269.92deg, #e83e8c, #6f42c1)"; // Restaurantes activo
+       } else {
+         restaurantesButton.style.background = "transparent"; // Restaurantes inactivo
+         otrosButton.style.background =
+           "linear-gradient(269.92deg, #e83e8c, #6f42c1)"; // Otros activo
+       }
+     }
+    </script>            
 
-                        <b class="ver-catlogo">Ver Catálogo</b>
-                      </div>
-                      <div class="mask-group-parent">
-                        <img
-                          class="mask-group-icon1"
-                          alt=""
-                          src="./public/mask-group-1.svg"
-                        />
 
-                        <div class="uncle-once-removed-nodes">
-                          <b class="registra-tu-negocio"
-                            >¡Registra tu negocio hoy!</b
-                          >
+            </div>
+            <div class="food-menu-3-svgrepocom"></div>
+            <div class="tree-structure">
+              <div class="wrapper-img">
+                <img class="img-icon" loading="lazy" alt="" src="./public/img@2x.png">
+              </div>
+              <div class="loop-control">
+                <div class="condition-checker">
+                  <div class="function-caller">
+                    <div class="data-splitter">
+                      <button class="rectangle-group">
+                        <div class="frame-item"></div>
+                        <img class="qr-code-scan-svgrepocom-icon" alt="" src="./public/qrcodescan-svgrepocom.svg">
+                      </button>
+                      <div class="parallel-processor">
+                        <b class="qr-codes-personalizados1">QR CODES PERSONALIZADOS</b>
+                        <div class="ofrecemos-qr-codes">
+                          Ofrecemos QR Codes Personalizados con el logo y colores de tu restaurante. Tus clientes podrán escanear este QR Code y acceder al perfil de tu negocio dentro de Aligera.
                         </div>
-                        <div class="ancestor-twice-removed-nodes-parent">
-                          <div class="ancestor-twice-removed-nodes"></div>
-                          <div class="ancestor-twice-removed-nodes1"></div>
+                      </div>
+                    </div>
+                    <div class="data-splitter1">
+                      <button class="rectangle-container">
+                        <div class="frame-inner"></div>
+                        <img class="vector-icon" alt="" src="./public/vector.svg">
+                      </button>
+                      <div class="men-digital-parent">
+                        <b class="men-digital1">MENÚ DIGITAL</b>
+                        <div class="dentro-del-perfil">
+                          Dentro del perfil de tu restaurante, también, puedes presentar tu menú. Este menú puede presentarse de manera Dinámica (con fotos, descripción y precio) o en formato PDF.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="data-merger">
+                    <div class="data-splitter2">
+                      <button class="group-button">
+                        <div class="rectangle-div"></div>
+                        <img class="business-shop-woman-svgrepoco-icon" alt="" src="./public/businessshopwoman-svgrepocom.svg">
+                      </button>
+                      <div class="data-creator">
+                        <b class="perfil-de-tu">PERFIL DE TU NEGOCIO</b>
+                        <div class="se-le-crear">
+                          Se le creará un perfil a tu restaurante dentro de Aligera donde podrás presentar toda la información esencial del mismo (localización, horario, redes sociales y más).
+                        </div>
+                      </div>
+                    </div>
+                    <div class="data-splitter3">
+                      <button class="rectangle-parent1">
+                        <div class="frame-child1"></div>
+                        <img class="calendar-icon" alt="" src="./public/calendar.svg">
+                      </button>
+                      <div class="reservaciones-citas-parent">
+                        <b class="reservaciones-citas">RESERVACIONES / CITAS</b>
+                        <div class="ofrcele-la-comodidad">
+                          Ofrécele la comodidad a tus clientes de poder hacer reservaciones desde el perfil de tu restaurante sin tener que llamar. Podrás manejar el estatus y disponibilidad de estas reservaciones desde tu cuenta de Aligera.
                         </div>
                       </div>
                     </div>
@@ -102,220 +206,16 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="descendant-twice-removed-nodes">
-          <div class="sibling-twice-removed-nodes">
-            <button class="uncle-twice-removed-nodes">
-              <div class="uncle-four-times-removed-nodes">
-                <div class="cousin-twice-removed-nodes"></div>
-                <img
-                  class="aligera-a-logo-nobg-1-icon"
-                  alt=""
-                  src="./public/aligeraalogonobg-1@2x.png"
-                />
-              </div>
-              <div class="descendant-thrice-removed-node">
-                <i class="qr-codes-personalizados" id="boton-1">QR CODES PERSONALIZADOS</i>
-              </div>
-            </button>
-            <button class="uncle-twice-removed-nodes1">
-              <div class="uncle-four-times-removed-nodes1">
-                <div class="uncle-four-times-removed-nodes-child"></div>
-                <img
-                  class="aligera-a-logo-nobg-3-icon"
-                  alt=""
-                  src="./public/aligeraalogonobg-1@2x.png"
-                />
-              </div>
-              <div class="reservaciones-wrapper">
-                <i class="reservaciones" id="boton-4">RESERVACIONES</i>
-              </div>
-            </button>
-            <button class="uncle-twice-removed-nodes2">
-              <div class="uncle-four-times-removed-nodes2">
-                <div class="uncle-four-times-removed-nodes-item"></div>
-                <img
-                  class="aligera-a-logo-nobg-4-icon"
-                  alt=""
-                  src="./public/aligeraalogonobg-1@2x.png"
-                />
-              </div>
-              <div class="perfil-de-negocio-wrapper">
-                <i class="perfil-de-negocio" id="boton-2">PERFIL DE NEGOCIO</i>
-              </div>
-            </button>
-            /* MENÚ NAVEGACIÓN*/
-             <header class="navbar">
-             <img class="navbar-child" alt="" src="./public/vector-2.svg" />
+          <!-- enD page SERVICES -->
+        </section>
+        
 
-              <div class="navbar-item"></div>
-              <div class="inicio">Inicio</div>
-              <div class="servicios">Servicios</div>
-              <div class="precios">Precios</div>
-              <div class="catlogo">Catálogo</div>
-             <div class="contctanos">Contáctanos</div>
-             
-            </header> 
-            <div class="uncle-thrice-removed-nodes">
-              <img
-                class="landingpanaderia-1-icon"
-                alt=""
-                src="./public/landingpanaderia-1@2x.png"
-              />
 
-              <button class="login">
-                <div class="login-child"></div>
-                <div class="log-in">Log In / Sign Up</div>
-                <img
-                  class="ancestor-four-times-removed-no"
-                  alt=""
-                  src="./public/ancestor-four-times-removed-nodes.svg"
-                />
-              </button>
-              <div class="descendant-four-times-removed">
-                <div class="sibling-four-times-removed-nod">
-                  <div class="uncle-four-times-removed-nodes3">
-                    <div class="aunt-four-times-removed-nodes"></div>
-                    <img
-                      class="aligera-a-logo-nobg-2-icon"
-                      alt=""
-                      src="./public/aligeraalogonobg-1@2x.png"
-                    />
-                  </div>
-                  <div class="ancestor-five-times-removed-no">
-                    <i class="men-digital" id="boton-3">MENÚ DIGITAL</i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end page 1 -->
-<!--  -->
-      <section class="aunt-five-times-removed-nodes">
-        <div class="services">
-          <!-- <img class="background-right-icon" alt="" /> -->
 
-          <div class="ancestor-six-times-removed-nod">
-            <div class="descendant-six-times-removed-n">
-              <h1 class="servicios1">Servicios</h1>
-              <div class="conoce-la-variedad">
-                Conoce la variedad de servicios que ofrecemos:
-              </div>
-            </div>
-            <div class="aunt-six-times-removed-nodes">
-              <div class="switch-button">
-                <button class="logic-gate-parent">
-                  <div class="logic-gate"></div>
-                  <b class="monthly">Restaurantes</b>
-                </button>
-                <div class="rectangle-parent">
-                  <div class="frame-child"></div>
-                  <b class="monthly1">Otros</b>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="food-menu-3-svgrepocom"></div>
-          <div class="tree-structure">
-            <div class="wrapper-img">
-              <img
-                class="img-icon"
-                loading="lazy"
-                alt=""
-                src="./public/img@2x.png"
-              />
-            </div>
-            <div class="loop-control">
-              <div class="condition-checker">
-                <div class="function-caller">
-                  <div class="data-splitter">
-                    <button class="rectangle-group">
-                      <div class="frame-item"></div>
-                      <img
-                        class="qr-code-scan-svgrepocom-icon"
-                        alt=""
-                        src="./public/qrcodescan-svgrepocom.svg"
-                      />
-                    </button>
-                    <div class="parallel-processor">
-                      <b class="qr-codes-personalizados1"
-                        >QR CODES PERSONALIZADOS</b
-                      >
-                      <div class="ofrecemos-qr-codes">
-                        Ofrecemos QR Codes Personalizados con el logo y colores
-                        de tu restaurante. Tus clientes podrán escanear este QR
-                        Code y acceder al perfil de tu negocio dentro de
-                        Aligera.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="data-splitter1">
-                    <button class="rectangle-container">
-                      <div class="frame-inner"></div>
-                      <img
-                        class="vector-icon"
-                        alt=""
-                        src="./public/vector.svg"
-                      />
-                    </button>
-                    <div class="men-digital-parent">
-                      <b class="men-digital1">MENÚ DIGITAL</b>
-                      <div class="dentro-del-perfil">
-                        Dentro del perfil de tu restaurante, también, puedes
-                        presentar tu menú. Este menú puede presentarse de manera
-                        Dinámica (con fotos, descripción y precio) o en formato
-                        PDF.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="data-merger">
-                  <div class="data-splitter2">
-                    <button class="group-button">
-                      <div class="rectangle-div"></div>
-                      <img
-                        class="business-shop-woman-svgrepoco-icon"
-                        alt=""
-                        src="./public/businessshopwoman-svgrepocom.svg"
-                      />
-                    </button>
-                    <div class="data-creator">
-                      <b class="perfil-de-tu">PERFIL DE TU NEGOCIO</b>
-                      <div class="se-le-crear">
-                        Se le creará un perfil a tu restaurante dentro de
-                        Aligera donde podrás presentar toda la información
-                        esencial del mismo (localización, horario, redes
-                        sociales y más).
-                      </div>
-                    </div>
-                  </div>
-                  <div class="data-splitter3">
-                    <button class="rectangle-parent1">
-                      <div class="frame-child1"></div>
-                      <img
-                        class="calendar-icon"
-                        alt=""
-                        src="./public/calendar.svg"
-                      />
-                    </button>
-                    <div class="reservaciones-citas-parent">
-                      <b class="reservaciones-citas">RESERVACIONES / CITAS</b>
-                      <div class="ofrcele-la-comodidad">
-                        Ofrécele la comodidad a tus clientes de poder hacer
-                        reservaciones desde el perfil de tu restaurante sin
-                        tener que llamar. Podrás manejar el estatus y
-                        disponibilidad de estas reservaciones desde tu cuenta de
-                        Aligera.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+
+        <!-- END PRUEBA -->
         <div class="how-work-section">
           <div class="y-brndale-ms">
             y bríndale más exposición a tu negocio.
@@ -513,6 +413,8 @@
           />
         </div>
       </section>
+      <!-- end page 2 -->
+      <!-- page 3 -->
       <section class="error-handler">
         <div class="function-call-node">
           <div class="assignment-node">
@@ -585,6 +487,8 @@
           </div>
         </div>
       </section>
+
+<!-- precios -->
       <section class="set-node">
         <div class="stack-node">
           <div class="queue-node">
@@ -848,6 +752,9 @@
           </div>
         </div>
       </section>
+      <!-- precios -->
+
+      <!-- start page -->
       <form class="contact-us-section">
         <div class="image-analyzer">
           <div class="link-handler">
@@ -923,6 +830,7 @@
           </div>
         </div>
       </form>
+      <!-- end page -->
       <footer class="footer">
         <div class="footer-inner">
           <div class="logo-parent">
