@@ -5,6 +5,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./index.css" />
@@ -55,7 +57,14 @@
           <img src="img/Aligera logo.png" alt="logo" class="logoS">
       </div>
       <nav>
-          <ul>
+        <div class="hamburguesa" onclick="toggleMenu()">
+          <div class="barra"></div>
+          <div class="barra"></div>
+          <div class="barra"></div>
+          <div class="barra"></div>
+          <div class="barra"></div>
+        </div>
+          <ul class="menu" id="menu">
               <li><a href="#" class="activo">INICIO</a></li>
               <li><a href="#">SERVICIOS</a></li>
               <li><a href="#">PRECIOS</a></li>
@@ -286,9 +295,15 @@
           </div>
 
           <div class="contenedor-buscador">
+          <div class="columna2 columna-izquierda">
             <input type="text" placeholder="Explora la variedad de comercios disponibles" class="campo-busqueda">
             <button type="submit" class="boton-buscar"><img src="img/lupa.png" alt="Buscar">Buscar</button>
           </div>
+          <div class="columna2 columna-derecha">
+            <button type="submit" class="boton-categoria"><img src="img/lupa.png" alt="Buscar">Categoría</button>
+          </div>
+          </div>
+
           
           <div class="data-pool">
             <div class="data-stream">
@@ -408,12 +423,7 @@
               </div>
             </div>
           </div>
-          <img
-            class="data-restore-child"
-            loading="lazy"
-            alt=""
-            src="./public/group-39.svg"
-          />
+          <img class="data-restore-child" loading="lazy" alt="" src="./public/group-39.svg"/>
         </div>
       </section>
       <!-- end page 2 SECCION CATALOGO -->
