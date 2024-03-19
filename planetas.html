@@ -1,0 +1,119 @@
+<div class="sistema-solar">
+    <div class="sol">
+      <img src="/img/aligeralogosol.png" width="80" alt="">
+    </div>
+    <div class="orbitaA orbita1">
+      <div class="planeta0"></div>
+      <div class="planeta1"></div>
+    </div>
+    <div class="orbitaB orbita2">
+      <div class="planeta2"></div>
+      <div class="planeta3"></div>
+    </div>
+    <div class="orbitaC orbita3">
+      <div class="planeta4"></div>
+      <div class="planeta5"></div>
+      <div class="planeta6"></div>
+    </div>
+    <div class="circulo">
+      <div class="signo-mas">+</div>
+    </div>
+  </div>
+  
+  <style>
+  .sistema-solar {
+    background: linear-gradient(269.92deg, #e83e8c, #6f42c1);
+    position: relative;
+    width: 100%; /* Ajusta el ancho al 100% para ser responsive */
+    padding-bottom: 100%; /* Establece la altura como un porcentaje del ancho para mantener la relación de aspecto cuadrada */
+    max-width: 800px; /* Establece un ancho máximo */
+    margin: 0 auto;
+  }
+  
+  .sol {
+    width: 10%; /* Tamaño del sol en porcentaje */
+    padding-top: 10%; /* Altura del sol en porcentaje */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .orbitaA, .orbitaB, .orbitaC {
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: orbit 20s linear infinite;
+  }
+  
+  .orbita1 {
+    width: 25%; /* Diámetro de la órbita 1 en porcentaje */
+    padding-top: 25%; /* Altura de la órbita 1 en porcentaje */
+    top: 50%; /* Centrar la órbita verticalmente */
+    left: 50%; /* Centrar la órbita horizontalmente */
+    transform: translate(-50%, -50%);
+  }
+  
+  .orbita2 {
+    width: 50%; /* Diámetro de la órbita 2 en porcentaje */
+    padding-top: 50%; /* Altura de la órbita 2 en porcentaje */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .orbita3 {
+    width: 75%; /* Diámetro de la órbita 3 en porcentaje */
+    padding-top: 75%; /* Altura de la órbita 3 en porcentaje */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .planeta0, .planeta1, .planeta2, .planeta3, .planeta4, .planeta5, .planeta6 {
+    width: 10%; /* Tamaño del planeta en porcentaje */
+    padding-top: 10%; /* Altura del planeta en porcentaje */
+    background-color: #4f4f4f;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .planeta0 { left: 50%; }
+  .planeta1 { left: 70%; }
+  .planeta2 { left: 40%; }
+  .planeta3 { left: 60%; }
+  .planeta4 { left: 30%; }
+  .planeta5 { left: 50%; }
+  .planeta6 { left: 70%; top: 60%; }
+  
+  .circulo {
+    width: 10%; /* Tamaño del círculo en porcentaje */
+    padding-top: 10%; /* Altura del círculo en porcentaje */
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signo-mas {
+    font-weight: 800;
+    font-size: 10%; /* Tamaño del signo de más en porcentaje */
+    color: #e83e8c;
+  }
+  
+  @keyframes orbit {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  </style>
+  

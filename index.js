@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("boton-4"),
   ];
   let imagenes = [
-    'url("./public/01-qrcodes.png")',
-    'url("./public/02-profilemenu.png")',
-    'url("./public/03-panaderia.png")',
-    'url("./public/04-calendary.png")',
+    'url("./images/home-1-qr.svg")',
+    'url("./images/home-2-celulares.svg")',
+    'url("./images/home-3-celular.svg")',
+    'url("./images/home-4-calendary.svg")',
   ];
   let indiceActual = 0;
   let claseConFondo = document.querySelector(".contenedor-botones2");

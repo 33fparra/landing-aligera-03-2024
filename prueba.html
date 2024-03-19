@@ -1,165 +1,714 @@
-<div class="sistema-solar" >
-  <div class="sol">
-    <img src="/img/aligeralogosol.png" width="80" alt="">
-    <!-- Aquí irían las imágenes de los planetas si se usaran -->
+<section class="solar">
+  <div class="sistema-solar">
+    <div class="sol">
+      <img src="/img/aligeralogosol.png" alt="" id="img-center">
+      <!-- Aquí irían las imágenes de los planetas si se usaran -->
+    </div>
+    <div class="orbitaA orbita1">
+      <div class="planeta0"></div>
+      <div class="planeta1"></div>
+    </div>
+    <div class="orbitaB orbita2">
+      <div class="planeta2"></div>
+      <div class="planeta3"></div>
+    </div>
+    <div class="orbitaC orbita3">
+      <div class="planeta4"></div>
+      <div class="planeta5"></div>
+      <div class="planeta6"></div>
+    </div>
+    <div class="circulo">
+      <div class="signo-mas">+</div>
+    </div>
   </div>
-  <div class="orbitaA orbita1">
-    <div class="planeta0"></div>
-    <div class="planeta1"></div>
+  <div class="letras-sis-solar">
+
+    <div class="flecha-1">
+      <img class="flecha" loading="lazy" alt="" src="./public/arrow-1.svg" />
+    </div>
+    <div class="flecha-2">
+      <img id="arrow-top" loading="lazy" alt="" src="./images/arrow-top.svg" />
+    </div>
+    <div class="letras-flecha">
+      <h1 class="nete-a-nuestra">
+        ¡Únete a nuestra red y bríndale más exposición a tu negocio!
+      </h1>
+      <div class="data-validator">
+        <b class="registra-tu-negocio1">¡Registra tu negocio hoy!</b>
+      </div>
+    </div>
   </div>
-  <div class="orbitaB orbita2">
-    <div class="planeta2"></div>
-    <div class="planeta3"></div>
-  </div>
-  <div class="orbitaC orbita3">
-    <div class="planeta4"></div>
-    <div class="planeta5"></div>
-    <div class="planeta6"></div>
-  </div>
-  <div class="circulo">
-    <div class="signo-mas">+</div>
-  </div>
-</div>
+</section>
+
 
 <style>
-.sistema-solar {
-  background: linear-gradient(269.92deg, #e83e8c, #6f42c1);
-position: relative;
-width: 800px; /* Ajusta el tamaño del sistema solar según sea necesario */
-height: 800px;
-margin: 0 auto;
-}
+  .solar {
+    margin: 0px !important;
+    padding: 0pc !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(269.92deg, #e83e8c, #6f42c1);
+  }
 
-.sol {
-width: 80px; /* Tamaño del sol */
-height: 80px;
-/*background-color: #ffd700; Color del sol */
+  #arrow-top {
+    display: none;
+  }
 
-border-radius: 50%;
-position: absolute;
-top: calc(50% - 40px); /* Centrar el sol verticalmente */
-left: calc(50% - 40px); /* Centrar el sol horizontalmente */
-display: flex;
-justify-content: center;
-align-items: center;
-}
+  .sistema-solar {
+    width: 55%;
+    position: relative;
+    height: 800px;
+    margin: 0 auto;
+  }
 
-.orbitaA {
-position: absolute;
-border: 2px solid white; /* Color de la órbita */
-border-radius: 50%;
-animation: orbit 20s linear infinite;
-}
-.orbitaB {
-position: absolute;
-border: 2px solid white; /* Color de la órbita */
-border-radius: 50%;
-animation: orbit 65s linear infinite;
-}
-.orbitaC {
-position: absolute;
-border: 2px solid white; /* Color de la órbita */
-border-radius: 50%;
-animation: orbit 45s linear infinite;
-}
+  #img-center {
+    width: 80px;
+  }
 
-.orbita1 {
-width: 200px; /* Diámetro de la órbita 1 */
-height: 200px;
-top: calc(50% - 100px); /* Centrar la órbita 1 */
-left: calc(50% - 100px);
-}
+  .sol {
+    width: 80px;
+    /* Tamaño del sol */
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 40px);
+    /* Centrar el sol verticalmente */
+    left: calc(50% - 40px);
+    /* Centrar el sol horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.orbita2 {
-width: 400px; /* Diámetro de la órbita 2 */
-height: 400px;
-top: calc(50% - 200px); /* Centrar la órbita 2 */
-left: calc(50% - 200px);
-}
+  .orbitaA {
+    position: absolute;
+    border: 2px solid white;
+    /* Color de la órbita */
+    border-radius: 50%;
+    animation: orbit 20s linear infinite;
+  }
 
-.orbita3 {
-width: 600px; /* Diámetro de la órbita 3 */
-height: 600px;
-top: calc(50% - 300px); /* Centrar la órbita 3 */
-left: calc(50% - 300px);
-}
+  .orbitaB {
+    position: absolute;
+    border: 2px solid white;
+    /* Color de la órbita */
+    border-radius: 50%;
+    animation: orbit 65s linear infinite;
+  }
 
-.planeta0 {
-width: 70px; /* Tamaño del planeta */
-height: 70px;
-background-color: #4f4f4f; /* Color del planeta */
-border-radius: 50%;
-position: absolute;
-top: 0;
-left: 77%;
-transform: translateX(-50%);
-}
+  .orbitaC {
+    position: absolute;
+    border: 2px solid white;
+    /* Color de la órbita */
+    border-radius: 50%;
+    animation: orbit 45s linear infinite;
+  }
 
-.planeta0, .planeta1, .planeta2, .planeta3, .planeta4, .planeta5, .planeta6 {
-  width: 70px; /* Tamaño del planeta */
-  height: 70px;
-  background-color: #4f4f4f; /* Color del planeta */
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-}
+  .orbita1 {
+    width: 200px;
+    /* Diámetro de la órbita 1 */
+    height: 200px;
+    top: calc(50% - 100px);
+    /* Centrar la órbita 1 */
+    left: calc(50% - 100px);
+  }
 
-.planeta0 {
-  left: 25%; /* Ajusta la posición del primer planeta */
-}
+  .orbita2 {
+    width: 400px;
+    /* Diámetro de la órbita 2 */
+    height: 400px;
+    top: calc(50% - 200px);
+    /* Centrar la órbita 2 */
+    left: calc(50% - 200px);
+  }
 
-.planeta1 {
-  left: 75%; /* Ajusta la posición del segundo planeta */
-}
+  .orbita3 {
+    width: 600px;
+    /* Diámetro de la órbita 3 */
+    height: 600px;
+    top: calc(50% - 300px);
+    /* Centrar la órbita 3 */
+    left: calc(50% - 300px);
+  }
 
-.planeta2 {
-  left: 45%; /* Ajusta la posición del tercer planeta */
-}
+  .planeta0 {
+    width: 70px;
+    /* Tamaño del planeta */
+    height: 70px;
+    background-color: #4f4f4f;
+    /* Color del planeta */
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 77%;
+    transform: translateX(-50%);
+  }
 
-.planeta3 {
-  left: 75%; /* Ajusta la posición del cuarto planeta */
-}
+  .planeta0,
+  .planeta1,
+  .planeta2,
+  .planeta3,
+  .planeta4,
+  .planeta5,
+  .planeta6 {
+    width: 70px;
+    /* Tamaño del planeta */
+    height: 70px;
+    background-color: #4f4f4f;
+    /* Color del planeta */
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
 
-.planeta4 {
-  left: 35%; /* Ajusta la posición del quinto planeta */
-}
+  .planeta0 {
+    left: 25%;
+    /* Ajusta la posición del primer planeta */
+  }
 
-.planeta5 {
-  left: 55%; /* Ajusta la posición del sexto planeta */
-}
+  .planeta1 {
+    left: 75%;
+    /* Ajusta la posición del segundo planeta */
+    top: 200px;
+  }
 
-.planeta6 {
-  left: 75%; /* Ajusta la posición del séptimo planeta */
-}
+  .planeta2 {
+    left: 45%;
+    /* Ajusta la posición del tercer planeta */
+  }
 
-.circulo {
-  width: 90px; /* Tamaño del círculo */
-  height: 90px;
-  background-color: white; /* Fondo transparente */
-  border-radius: 50%;
-  position: absolute;
-  top: calc(50% - 45px); /* Centrar verticalmente */
-  left: calc(50% + 260px); /* Ajusta la posición horizontal */
-  z-index: 2; /* Asegura que esté por encima de los planetas */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.signo-mas {
-  font-weight: 800;
-  font-size: 90px; /* Tamaño del signo de más */
-  color:#e83e8c; /* Color del signo de más */
-}
+  .planeta3 {
+    left: 65%;
+    /* Ajusta la posición del cuarto planeta */
+  }
 
-/* Animación de órbita */
-@keyframes orbit {
-from {
-  transform: rotate(0deg);
-}
-to {
-  transform: rotate(360deg);
-}
-}
+  .planeta4 {
+    left: 35%;
+    /* Ajusta la posición del quinto planeta */
+  }
+
+  .planeta5 {
+    left: 55%;
+    /* Ajusta la posición del sexto planeta */
+  }
+
+  .planeta6 {
+    left: 300px;
+    /* Ajusta la posición del séptimo planeta */
+    width: 90px !important;
+    height: 90px !important;
+    top: 600px !important;
+  }
+
+  .circulo {
+    width: 90px;
+    /* Tamaño del círculo */
+    height: 90px;
+    background-color: white;
+    /* Fondo transparente */
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 45px);
+    /* Centrar verticalmente */
+    left: calc(50% + 260px);
+    /* Ajusta la posición horizontal */
+    z-index: 2;
+    /* Asegura que esté por encima de los planetas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signo-mas {
+    font-weight: 800;
+    font-size: 90px;
+    /* Tamaño del signo de más */
+    color: #e83e8c;
+    /* Color del signo de más */
+  }
+
+  /* Animación de órbita */
+  @keyframes orbit {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .letras-sis-solar {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flecha-1 {
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .flecha {
+    width: 100px;
+    justify-content: flex-end;
+  }
+
+  .letras-flecha {
+    color: white;
+    width: 50%;
+    /* Ajusta el tamaño del contenedor de las letras */
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    .sistema-solar {
+      width: 65%;
+    }
+
+    .sol {
+      width: 72px;
+      height: 72px;
+      top: calc(50% - 36px);
+      /* Centrar el sol verticalmente */
+      left: calc(50% - 36px);
+      /* Centrar el sol horizontalmente */
+    }
+
+    .orbita1 {
+      width: 180px;
+      /* Diámetro de la órbita 1 */
+      height: 180px;
+      top: calc(50% - 90px);
+      /* Centrar la órbita 1 */
+      left: calc(50% - 90px);
+    }
+
+    .orbita2 {
+      width: 360px;
+      /* Diámetro de la órbita 2 */
+      height: 360px;
+      top: calc(50% - 180px);
+      /* Centrar la órbita 2 */
+      left: calc(50% - 180px);
+    }
+
+    .orbita3 {
+      width: 540px;
+      /* Diámetro de la órbita 3 */
+      height: 540px;
+      top: calc(50% - 270px);
+      /* Centrar la órbita 3 */
+      left: calc(50% - 270px);
+    }
+
+    .planeta0,
+    .planeta1,
+    .planeta2,
+    .planeta3,
+    .planeta4,
+    .planeta5,
+    .planeta6 {
+      width: 63px;
+      /* Tamaño del planeta */
+      height: 63px;
+      background-color: #4f4f4f;
+      /* Color del planeta */
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .planeta0 {
+      left: 25%;
+      /* Ajusta la posición del primer planeta */
+    }
+
+    .planeta1 {
+      left: 75%;
+      /* Ajusta la posición del segundo planeta */
+      top: 180px;
+    }
+
+    .planeta2 {
+      left: 45%;
+      /* Ajusta la posición del tercer planeta */
+    }
+
+    .planeta3 {
+      left: 65%;
+      /* Ajusta la posición del cuarto planeta */
+    }
+
+    .planeta4 {
+      left: 35%;
+      /* Ajusta la posición del quinto planeta */
+    }
+
+    .planeta5 {
+      left: 55%;
+      /* Ajusta la posición del sexto planeta */
+    }
+
+    .planeta6 {
+      left: 270px;
+      /* Ajusta la posición del séptimo planeta */
+      width: 81px !important;
+      height: 81px !important;
+      top: 540px !important;
+    }
+
+    .circulo {
+      width: 81px;
+      /* Tamaño del círculo */
+      height: 81px;
+      top: calc(50% - 40.5px);
+      /* Centrar verticalmente */
+      left: calc(50% + 234px);
+      /* Ajusta la posición horizontal */
+    }
+
+    .flecha {
+      width: 60px;
+      justify-content: flex-end;
+    }
+
+    .letras-sis-solar {
+      width: 30%;
+      justify-content: flex-end;
+      padding-right: 30px;
+    }
+
+    .letras-flecha {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width:940px) {
+    .sol {
+      width: 64px;
+      height: 64px;
+      top: calc(50% - 32px);
+      /* Centrar el sol verticalmente */
+      left: calc(50% - 32px);
+      /* Centrar el sol horizontalmente */
+    }
+
+    .flecha {
+      justify-content: flex-start;
+    }
+
+    .sistema-solar {
+      width: 70%;
+    }
+
+    .orbita1 {
+      width: 160px;
+      /* Diámetro de la órbita 1 */
+      height: 160px;
+      top: calc(50% - 80px);
+      /* Centrar la órbita 1 */
+      left: calc(50% - 80px);
+    }
+
+    .orbita2 {
+      width: 320px;
+      /* Diámetro de la órbita 2 */
+      height: 320px;
+      top: calc(50% - 160px);
+      /* Centrar la órbita 2 */
+      left: calc(50% - 160px);
+    }
+
+    .orbita3 {
+      width: 480px;
+      /* Diámetro de la órbita 3 */
+      height: 480px;
+      top: calc(50% - 240px);
+      /* Centrar la órbita 3 */
+      left: calc(50% - 240px);
+    }
+
+    .planeta0,
+    .planeta1,
+    .planeta2,
+    .planeta3,
+    .planeta4,
+    .planeta5,
+    .planeta6 {
+      width: 56px;
+      /* Tamaño del planeta */
+      height: 56px;
+      background-color: #4f4f4f;
+      /* Color del planeta */
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .planeta0 {
+      left: 25%;
+      /* Ajusta la posición del primer planeta */
+    }
+
+    .planeta1 {
+      left: 75%;
+      /* Ajusta la posición del segundo planeta */
+      top: 160px;
+    }
+
+    .planeta2 {
+      left: 45%;
+      /* Ajusta la posición del tercer planeta */
+    }
+
+    .planeta3 {
+      left: 65%;
+      /* Ajusta la posición del cuarto planeta */
+    }
+
+    .planeta4 {
+      left: 35%;
+      /* Ajusta la posición del quinto planeta */
+    }
+
+    .planeta5 {
+      left: 55%;
+      /* Ajusta la posición del sexto planeta */
+    }
+
+    .planeta6 {
+      left: 240px;
+      /* Ajusta la posición del séptimo planeta */
+      width: 72px !important;
+      height: 72px !important;
+      top: 480px !important;
+    }
+
+    .circulo {
+      width: 72px;
+      /* Tamaño del círculo */
+      height: 72px;
+      top: calc(50% - 36px);
+      /* Centrar verticalmente */
+      left: calc(50% + 208px);
+      /* Ajusta la posición horizontal */
+    }
+
+    .letras-sis-solar {
+      width: 30%;
+      justify-content: flex-end;
+      padding-right: 30px;
+    }
+
+    .letras-flecha {
+      color: white;
+      width: 60%;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  @media screen and (max-width:800px) {
+    .solar {
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .sistema-solar {
+      width: 100%;
+      height: 450px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column !important;
+    }
+
+    .sol {
+      width: 40px !important;
+      /* Tamaño del sol */
+      height: 40px !important;
+      border-radius: 50%;
+      position: absolute;
+      top: calc(50% - 20px);
+      /* Centrar el sol verticalmente */
+      left: calc(50% - 20px);
+      /* Centrar el sol horizontalmente */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #img-center {
+      width: 40px;
+    }
+
+    .orbitaA {
+      position: absolute;
+      border: 2px solid white;
+      /* Color de la órbita */
+      border-radius: 50%;
+      animation: orbit 20s linear infinite;
+    }
+
+    .orbitaB {
+      position: absolute;
+      border: 2px solid white;
+      /* Color de la órbita */
+      border-radius: 50%;
+      animation: orbit 65s linear infinite;
+    }
+
+    .orbitaC {
+      position: absolute;
+      border: 2px solid white;
+      /* Color de la órbita */
+      border-radius: 50%;
+      animation: orbit 45s linear infinite;
+    }
+
+    .orbita1 {
+      width: 100px;
+      /* Diámetro de la órbita 1 */
+      height: 100px;
+      top: calc(50% - 50px);
+      /* Centrar la órbita 1 */
+      left: calc(50% - 50px);
+    }
+
+    .orbita2 {
+      width: 200px;
+      /* Diámetro de la órbita 2 */
+      height: 200px;
+      top: calc(50% - 100px);
+      /* Centrar la órbita 2 */
+      left: calc(50% - 100px);
+    }
+
+    .orbita3 {
+      width: 300px;
+      /* Diámetro de la órbita 3 */
+      height: 300px;
+      top: calc(50% - 150px);
+      /* Centrar la órbita 3 */
+      left: calc(50% - 150px);
+    }
+
+    .planeta0,
+    .planeta1,
+    .planeta2,
+    .planeta3,
+    .planeta4,
+    .planeta5,
+    .planeta6 {
+      width: 35px;
+      height: 35px;
+      background-color: #4f4f4f;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .planeta0 {
+      left: 25%;
+      /* Ajusta la posición del primer planeta */
+    }
+
+    .planeta1 {
+      left: 75%;
+      /* Ajusta la posición del segundo planeta */
+      top: 100px;
+    }
+
+    .planeta2 {
+      left: 45%;
+      /* Ajusta la posición del tercer planeta */
+    }
+
+    .planeta3 {
+      left: 65%;
+      /* Ajusta la posición del cuarto planeta */
+    }
+
+    .planeta4 {
+      left: 35%;
+      /* Ajusta la posición del quinto planeta */
+    }
+
+    .planeta5 {
+      left: 55%;
+      /* Ajusta la posición del sexto planeta */
+    }
+
+    .planeta6 {
+      left: 150px;
+      /* Ajusta la posición del séptimo planeta */
+      width: 45px !important;
+      height: 45px !important;
+      top: 300px !important;
+    }
+
+    .circulo {
+      width: 45px;
+      /* Tamaño del círculo */
+      height: 45px;
+      background-color: white;
+      /* Fondo transparente */
+      border-radius: 50%;
+      position: absolute;
+      top: calc(50% - -130px);
+      /* Centrar verticalmente */
+      left: calc(50% - 22.5px);
+      /* Ajusta la posición horizontal */
+      z-index: 2;
+      /* Asegura que esté por encima de los planetas */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .signo-mas {
+      font-weight: 800;
+      font-size: 65px;
+      /* Tamaño del signo de más */
+      color: #e83e8c;
+      /* Color del signo de más */
+    }
+
+    .flecha-1 {
+      display: none;
+    }
+    #arrow-top {
+      display: block;
+      width: 50px;
+    }
+
+    .letras-sis-solar {
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+  }
 </style>
