@@ -1,54 +1,4 @@
-.nav {
-  background-color: #333;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.hamburguesa {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  position: relative;
-}
-
-.barra {
-  width: 100%;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-  transition: all 0.3s ease;
-}
-
-.menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: none;
-}
-
-.menu.activado {
-  display: block;
-}
-
-@media only screen and (min-width: 768px) {
-  .hamburguesa {
-    display: none; /* Oculta el botón de hamburguesa en pantallas más grandes */
-  }
-  
-  .menu {
-    display: flex; /* Muestra el menú en pantallas más grandes */
-    /* Agrega aquí estilos adicionales según sea necesario */
-  }
-}
-
-
-.menu.activado {
-  display: flex; /* Muestra el menú cuando está activo */
-  flex-direction: column; /* Apila los elementos verticalmente */
-  /* Agrega aquí estilos adicionales según sea necesario */
-}
 
 
 
@@ -141,7 +91,21 @@
     width: 17px;
   }
   .LOG {
-    display: none;
+    /* display: none; */
+    width:10%;
+    height: 55px !important;
+    /* height: 88px;
+    width: 8%; Las columnas ocupan el mismo espacio */
+    background-color: rgba(76, 76, 76, 75); /* Fondo blanco */
+    /*padding-right: 15px; Espacio interno del contenido
+    padding-left: 15px; */
+    text-align: center;
+    border: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 0px 40px;
   }
   
   .LOG a{
@@ -309,6 +273,18 @@
   .LOG {
     width:10%;
     height: 55px !important;
+    /* height: 88px;
+    width: 8%; Las columnas ocupan el mismo espacio */
+    background-color: rgba(76, 76, 76, 75); /* Fondo blanco */
+    /*padding-right: 15px; Espacio interno del contenido
+    padding-left: 15px; */
+    text-align: center;
+    border: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 0px 40px;
   }
   .LOG a{
     color: #fff;
@@ -2077,12 +2053,12 @@
   }
   .seccionCatalogo,
   .data-restore {
-    /*display: flex;
+    display: flex;
     flex-direction: column; 
     align-items: flex-start;
     justify-content: flex-start;
     box-sizing: border-box;
-    max-width: 100%; */
+    max-width: 100%;
   
     display: flex;
     flex-direction: column; /* Cambia el orden a vertical */
@@ -2102,10 +2078,10 @@
     gap: var(--gap-41xl);
   }
   .seccionCatalogo {
-     width: 1319px; 
+     width: 100% ; 
     flex-direction: row;
     padding: 0 0 312px var(--padding-xl);
-    text-align: left;
+    text-align: center;
     font-size: var(--font-size-2xl);
     color: var(--color-gray-100);
     font-family: var(--font-gilroy);
@@ -6344,12 +6320,12 @@
   }
   .seccionCatalogo,
   .data-restore {
-    /*display: flex;
+    display: flex;
     flex-direction: column; 
     align-items: flex-start;
     justify-content: flex-start;
     box-sizing: border-box;
-    max-width: 100%; */
+    max-width: 100%;
   
     display: flex;
     flex-direction: column; /* Cambia el orden a vertical */
@@ -10610,12 +10586,12 @@
   }
   .seccionCatalogo,
   .data-restore {
-    /*display: flex;
+    display: flex;
     flex-direction: column; 
     align-items: flex-start;
     justify-content: flex-start;
     box-sizing: border-box;
-    max-width: 100%; */
+    max-width: 100%;
   
     display: flex;
     flex-direction: column; /* Cambia el orden a vertical */
@@ -10635,10 +10611,10 @@
     gap: var(--gap-41xl);
   }
   .seccionCatalogo {
-     width: 1319px; 
-    flex-direction: row;
+     width: 100%; 
+    /* flex-direction: row; */
     padding: 0 0 312px var(--padding-xl);
-    text-align: left;
+    text-align: center;
     font-size: var(--font-size-2xl);
     color: var(--color-gray-100);
     font-family: var(--font-gilroy);
@@ -12761,3 +12737,689 @@
   }
 
 }
+
+
+/* @media only screen and (max-width: 768px){
+  
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+
+
+@media only screen and (min-width: 1025px){
+
+} */
+
+
+
+/*******************************************************************************************************************
+NAVBAR start
+********************************************************************************************************************/
+.nav {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburguesa {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.barra {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.menu.activado {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburguesa {
+    display: none; /* Oculta el botón de hamburguesa en pantallas más grandes */
+  }
+  
+  .menu {
+    display: flex; /* Muestra el menú en pantallas más grandes */
+    /* Agrega aquí estilos adicionales según sea necesario */
+  }
+
+
+}
+
+
+.menu.activado {
+  display: flex; /* Muestra el menú cuando está activo */
+  flex-direction: column; /* Apila los elementos verticalmente */
+  /* Agrega aquí estilos adicionales según sea necesario */
+}
+
+
+
+
+
+@media only screen and (max-width: 768px){
+  .cabecera {
+    display: flex; /* Utilizamos flexbox para dividir en columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+    align-items: center;
+    padding: 0px; /* Espacio alrededor del contenido */
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+  }
+
+  .logo1 {
+    padding-top:20px !important;
+    flex:1;
+    width: 15%; /* Las columnas ocupan el mismo espacio */  
+    align-items: end;
+  }
+
+  .logoS {
+    width: 150px; /* Establece el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: px solid #007bff; /* Añade un borde azul */
+    border-radius: 10px; /* Añade bordes redondeados */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Añade una sombra */
+    filter: grayscale(0%); /* Aplica un efecto de escala de grises al 50% */
+    opacity: 1; /* Reduce la opacidad */
+    position: absolute;
+    margin-top: 5px;
+    padding-top: 30px !important;
+    padding-left: 30px;
+    top: 2px;
+    left: 10px;
+    bottom: 6px;
+  }
+  .nav {
+    height: 88px;
+    width: 38%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    transform: translateX(-50%); /* Desplaza el elemento hacia atrás en la mitad de su ancho */
+    left: calc(50%);
+    border-radius: 0 0 40px 40px;
+    background: linear-gradient(269.92deg, #e83e8c, #6f42c1);
+    max-width: 100%;
+    z-index: 1;
+   }
+  
+  nav ul {
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    bottom: 0px;
+    border-radius: 0px 0px 15px 15px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    display: flex;
+    justify-content: center;
+    margin-right:0px !important;
+    justify-content: space-evenly;
+    
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 5px 10px;
+    font-size: 14px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 550;
+    padding: 1px;
+    padding-bottom: 20px;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    
+  }
+  nav ul li a.activo {
+    text-decoration: underline; /* Subraya el enlace activo */
+    text-decoration-color: #E83E8C;
+    text-decoration-thickness: 1px;
+  }
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  .hamburguesa {
+    display: none; /* Oculta el botón de hamburguesa en pantallas más grandes */
+  
+  }
+  
+  .menu {
+    display: flex; /* Muestra el menú en pantallas más grandes */
+    /* Agrega aquí estilos adicionales según sea necesario */
+  }
+  .cabecera {
+    display: flex; /* Utilizamos flexbox para dividir en columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+    align-items: center;
+    padding: 0px; /* Espacio alrededor del contenido */
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+  }
+
+  .logo1 {
+    padding-top:20px !important;
+    flex:1;
+    width: 15%; /* Las columnas ocupan el mismo espacio */  
+    align-items: end;
+  }
+  .logoS{
+    width: 90px;
+    top: 2px;
+    left: 5px;
+  }
+
+  .logoS {
+    width: 150px; /* Establece el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: px solid #007bff; /* Añade un borde azul */
+    border-radius: 10px; /* Añade bordes redondeados */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Añade una sombra */
+    filter: grayscale(0%); /* Aplica un efecto de escala de grises al 50% */
+    opacity: 1; /* Reduce la opacidad */
+    position: absolute;
+    margin-top: 5px;
+    padding-top: 30px !important;
+    padding-left: 30px;
+    top: 2px;
+    left: 10px;
+    bottom: 6px;
+  }
+  .logoS{
+    width: 90px;
+    top: 2px;
+    left: 5px;
+  }
+  nav {
+    height: 88px;
+    width: 38%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    transform: translateX(-50%); /* Desplaza el elemento hacia atrás en la mitad de su ancho */
+    left: calc(50%);
+    border-radius: 0 0 40px 40px;
+    background: linear-gradient(269.92deg, #e83e8c, #6f42c1);
+    max-width: 100%;
+    z-index: 1;
+   }
+  
+  nav ul {
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    bottom: 0px;
+    border-radius: 0px 0px 15px 15px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    display: flex;
+    justify-content: center;
+    margin-right:0px !important;
+    justify-content: space-evenly;
+    
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 5px 10px;
+    font-size: 14px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 550;
+    padding: 1px;
+    padding-bottom: 20px;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    
+  }
+  nav ul li a.activo {
+    text-decoration: underline; /* Subraya el enlace activo */
+    text-decoration-color: #E83E8C;
+    text-decoration-thickness: 1px;
+  }
+
+  .LOG {
+    display: none;
+  }
+  
+  .LOG a{
+    color: #fff;
+    font-size: large;
+    /* font-weight: bold; */
+    font-family: "Bebas Neue";
+    padding-top: 28px;
+  }
+  .LOG {
+    width:10%;
+    height: 55px !important;
+  }
+  .LOG a{
+    color: #fff;
+    font-size: 15px;
+    /* font-weight: bold; */
+    font-family: "Bebas Neue";
+    padding-top: 15px;
+  }
+  .columna {
+    width: 100%; /* Las columnas ocupan el mismo espacio */
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px; /* Espacio interno del contenido */
+    margin: 0 0px; /* Margen entre columnas */
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (min-width: 1025px){
+  .cabecera {
+    display: flex; /* Utilizamos flexbox para dividir en columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+    align-items: center;
+    padding: 0px; /* Espacio alrededor del contenido */
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+  }
+
+  .logo1 {
+    padding-top:20px !important;
+    flex:1;
+    width: 15%; /* Las columnas ocupan el mismo espacio */  
+    align-items: end;
+  }
+  .logoS {
+    width: 150px; /* Establece el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: px solid #007bff; /* Añade un borde azul */
+    border-radius: 10px; /* Añade bordes redondeados */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Añade una sombra */
+    filter: grayscale(0%); /* Aplica un efecto de escala de grises al 50% */
+    opacity: 1; /* Reduce la opacidad */
+    position: absolute;
+    margin-top: 5px;
+    padding-top: 30px !important;
+    padding-left: 30px;
+    top: 2px;
+    left: 10px;
+    bottom: 6px;
+  }
+
+  nav {
+    height: 88px;
+    width: 38%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    transform: translateX(-50%); /* Desplaza el elemento hacia atrás en la mitad de su ancho */
+    left: calc(50%);
+    border-radius: 0 0 40px 40px;
+    background: linear-gradient(269.92deg, #e83e8c, #6f42c1);
+    max-width: 100%;
+    z-index: 1;
+   }
+  
+  nav ul {
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    bottom: 0px;
+    border-radius: 0px 0px 15px 15px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    display: flex;
+    justify-content: center;
+    margin-right:0px !important;
+    justify-content: space-evenly;
+    
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 5px 10px;
+    font-size: 14px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 550;
+    padding: 1px;
+    padding-bottom: 20px;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    
+  }
+  nav ul li a.activo {
+    text-decoration: underline; /* Subraya el enlace activo */
+    text-decoration-color: #E83E8C;
+    text-decoration-thickness: 1px;
+  }
+  .LOG {
+    width:10%;
+    height: 55px !important;
+  }
+  .LOG a{
+    color: #fff;
+    font-size: 15px;
+    /* font-weight: bold; */
+    font-family: "Bebas Neue";
+    padding-top: 15px;
+  }
+
+}
+
+
+
+
+/**************************************************************************************************************
+END NAVBAR
+********************************************************************************************************************/
+
+
+
+
+
+/**********************************************************************************************************************
+START PAGE 1
+**********************************************************************************************************************/
+@media only screen and (max-width: 768px){
+  .contenedor {
+    display: flex; /* Utilizamos flexbox para dividir en columnas */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: space-between; /* Espacio entre las columnas */
+    padding: 20px; /* Espacio alrededor del contenido */
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+  }
+  .columna p {
+    text-align: center;
+    font-size: medium;
+    font-weight: 100;
+  }
+  .contenedor-botones2 {
+    display: none; /* Oculta elementos con la clase "nombre_de_clase" */
+  }
+  .contenedor-botones2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: right;
+    opacity: 0; /* Inicia invisible */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave para opacidad y deslizamiento */
+  }
+  .botones{
+    display: none; /* Oculta elementos con la clase "nombre_de_clase" */
+  }
+  .cont-botones{
+    display: none; /* Oculta elementos con la clase "nombre_de_clase" */
+    }
+    .boton2 {
+      display: none; /* Oculta elementos con la clase "nombre_de_clase" */
+    }
+    .btn{
+      align-items: center;
+      align-self: center;
+      padding-right: 8px;
+      width: 17px;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  .contenedor {
+    display: flex; /* Utilizamos flexbox para dividir en columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+    padding: 20px; /* Espacio alrededor del contenido */
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+  }
+  .columna {
+    width: 50%; /* Las columnas ocupan el mismo espacio */
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px; /* Espacio interno del contenido */
+    margin: 0 0px; /* Margen entre columnas */
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .columna p {
+    text-align: center;
+    font-size: medium;
+    font-weight: 100;
+  }
+  .contenedor-botones2 {
+    text-align: center; /* Centra los botones */
+    background-image: url('img/qrcodespersonalizadoslandingpage.png');
+    background-size: contain;
+    background-position: right; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 0px; 
+    z-index: 1;
+    position: fixed;
+    overflow: hidden; /* Esconde las partes del pseudo-elemento que se desborden */
+    transition: opacity 1s ease-in-out; /* Suaviza el cambio de opacidad */
+    background-attachment: fixed;
+    top: -1%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contenedor-botones2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: right;
+    opacity: 0; /* Inicia invisible */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave para opacidad y deslizamiento */
+  }
+  .botones{
+    display: flex;
+    position: absolute; /* Posicionamiento absoluto respecto a su contenedor relativo */
+    flex-direction: column;
+    align-items: flex-start;
+    top: 50%; /* Alineación vertical */
+    left: 45%; /* Alineación horizontal */
+    transform: translateY(-50%); /* Ajuste fino para centrado exacto */
+    z-index: 1000;
+    gap: 10px; /* Espaciado entre botones */
+  }
+  .cont-botones{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los botones a la izquierda */
+    gap: 10px; /* Ajusta el espacio entre botones */
+    transition: background-image 1s ease-in-out; /* Suaviza el cambio de fondo */
+    }
+    .boton2 {
+      text-align: start;
+      font-size: 11px;
+      font-weight: 500;
+      width: 225px;
+      display: block; /* Muestra los botones como bloques */
+      padding: 15px 20px; /* Espacio interno para el botón */
+      margin: 10px auto; /* Margen para centrar verticalmente */
+      background-color: #ffffff; /* Color de fondo del botón */
+      color: #E83E8C; /* Color del texto del botón */
+      border: none; /* Elimina el borde del botón */
+      border-radius: 5px; /* Borde redondeado del botón */
+      text-decoration: none; /* Elimina subrayado */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      z-index: 100;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Agrega sombra al botón */
+      transition: transform 0.5s ease-in-out; /* Suaviza el movimiento del botón */
+    }
+    .btn{
+      align-items: center;
+      align-self: center;
+      padding-right: 8px;
+      width: 17px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1025px){
+  .contenedor {
+    display: flex; /* Utilizamos flexbox para dividir en columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+    padding: 20px; /* Espacio alrededor del contenido */
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+  }
+  .columna {
+    width: 50%; /* Las columnas ocupan el mismo espacio */
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px; /* Espacio interno del contenido */
+    margin: 0 0px; /* Margen entre columnas */
+    font-size: xxx-large;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .columna p {
+    text-align: center;
+    font-size: medium;
+    font-weight: 100;
+  }
+  .contenedor-botones2 {
+    text-align: center; /* Centra los botones */
+    background-image: url('img/qrcodespersonalizadoslandingpage.png');
+    background-size: contain;
+    background-position: right; /* Centra la imagen en la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 0px; 
+    z-index: 1;
+    position: fixed;
+    overflow: hidden; /* Esconde las partes del pseudo-elemento que se desborden */
+    transition: opacity 1s ease-in-out; /* Suaviza el cambio de opacidad */
+    background-attachment: fixed;
+    top: -1%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contenedor-botones2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: right;
+    opacity: 0; /* Inicia invisible */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave para opacidad y deslizamiento */
+  }
+  .botones{
+    display: flex;
+    position: absolute; /* Posicionamiento absoluto respecto a su contenedor relativo */
+    flex-direction: column;
+    align-items: flex-start;
+    top: 50%; /* Alineación vertical */
+    left: 45%; /* Alineación horizontal */
+    transform: translateY(-50%); /* Ajuste fino para centrado exacto */
+    z-index: 1000;
+    gap: 10px; /* Espaciado entre botones */
+  }
+  .cont-botones{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los botones a la izquierda */
+    gap: 10px; /* Ajusta el espacio entre botones */
+    transition: background-image 1s ease-in-out; /* Suaviza el cambio de fondo */
+    }
+    .boton2 {
+      text-align: start;
+      font-size: medium;
+      font-weight: 500;
+      width: 320px;
+      /* width: 238px; */
+      display: block; /* Muestra los botones como bloques */
+      padding: 15px 20px; /* Espacio interno para el botón */
+      margin: 10px auto; /* Margen para centrar verticalmente */
+      background-color: #ffffff; /* Color de fondo del botón */
+      color: #E83E8C; /* Color del texto del botón */
+      border: none; /* Elimina el borde del botón */
+      border-radius: 5px; /* Borde redondeado del botón */
+      text-decoration: none; /* Elimina subrayado */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      z-index: 100;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Agrega sombra al botón */
+      transition: transform 0.5s ease-in-out; /* Suaviza el movimiento del botón */
+    }
+    .btn{
+      align-items: center;
+      align-self: center;
+      padding-right: 8px;
+      width: 17px;
+    }
+} 
+/*********************************************************************************************************************************
+END PAGE 1
+*********************************************************************************************************************************************/
+
+
+
+
+

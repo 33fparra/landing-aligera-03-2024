@@ -56,10 +56,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //Page SERVICES
 
-// document.querySelector('.hamburguesa').addEventListener('click', function() {
-//   document.querySelector('.menu').classList.toggle('activado');
-// });
-function toggleMenu() {
-  var menu = document.getElementById("menu");
-  menu.classList.toggle("activado");
-}
